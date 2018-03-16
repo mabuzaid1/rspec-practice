@@ -3,6 +3,7 @@ require_relative '../../unit/string_analyzer'
 describe StringAnalyzer do
   context "With valid input" do
 
+    #NOT ISLOATED  Example
     it "should detect when a string contains vowels" do
       #Setup
       sa = StringAnalyzer.new
@@ -12,10 +13,9 @@ describe StringAnalyzer do
       expect(sa.has_vowels? test_string).to be true
     end
 
-    it "should detect when a string doesn't contain vowels" do
-      sa = StringAnalyzer.new
-      test_string = 'bcdfg'
-      expect(sa.has_vowels? test_string).to be false
+    #ISLOATED  Example
+    context "should detect when a string doesn't contain vowels" do
+      it {expect(StringAnalyzer.new.has_vowels?('bcdfg')).to be false}
     end
 
   end
