@@ -16,6 +16,8 @@ describe StringAnalyzer do
     #ISLOATED  Example
     context "should detect when a string doesn't contain vowels" do
       it {expect(StringAnalyzer.new.has_vowels?('bcdfg')).to be false}
+      it {expect(StringAnalyzer.new.has_vowels?('')).to be false}
+
     end
 
   end
