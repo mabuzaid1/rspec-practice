@@ -9,16 +9,16 @@ module ColorizingThings
     strtime = ''
     strtime = "[#{Time.now.strftime('%X')}] ".colorize(:light_cyan) if wtime
     msgout = msg.colorize(clr)
-    print strtime + msgout
+    print strtime + msgout+"\n"
     puts if wcr
   end
 
   def p_done
-    puts ' ...done'.colorize(:light_green)
+    puts "...done\n".colorize(:light_green)
   end
 
   def p_wrote(n)
-    puts " ...#{n} items ...done.".colorize(:light_green)
+    puts " ...#{n}Example...done.".colorize(:light_green)
   end
 
   def p_str(str,color=:light_green,wcr=false)
