@@ -1,23 +1,13 @@
 require_relative '../unit/string_analyzer'
 require 'spec_helper'
 
-include ColorizingThings
-
-
 describe StringAnalyzer do
   #Setup
-  before(:example) do
+  around(:example) do |ex|
     @sa = StringAnalyzer.new
-  end
-  after(:example) do
+    ex.run
     p_wrote "Hook After "
   end
-
-#   around(:example) do |ex|
-#     @sa = StringAnalyzer.new
-#     ex.run
-#     p_wrote "Hook After "
-#   end
 
   context "With valid input" do
     p_msg "First Example running"
