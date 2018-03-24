@@ -1,4 +1,3 @@
-require_relative '../unit/string_analyzer'
 require 'spec_helper'
 
 describe StringAnalyzer do

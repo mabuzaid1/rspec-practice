@@ -22,7 +22,7 @@ module ColorizingThings
   end
 
   def p_str(str,color=:light_green,wcr=false)
-    print str.colorize(color)
+    print str.colorize(color)+"\n"
     puts if wcr
   end
 
