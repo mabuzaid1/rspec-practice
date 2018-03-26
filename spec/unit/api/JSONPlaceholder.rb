@@ -29,7 +29,7 @@ module JSONPlaceholder
 
   def delete(resource,id)
     begin
-      return RestClient.delete "https://jsonplaceholder.typicode.com/#{resource.to_s}/+#{id.to_s}", :accept => :json
+      return RestClient.delete "https://jsonplaceholder.typicode.com/#{resource.to_s}/+#{id.to_s}"
     rescue => e
       return e.response
     end
