@@ -16,4 +16,5 @@ gem 'http-cookie'
 group :test do
   gem "rspec"
   gem 'colorize'
+  gem 'simplecov'
 end

@@ -6,9 +6,9 @@ include ColorizingThings
 describe StringAnalyzer do
   #Setup
   let!(:sa) do
-    p_msg "let invoked"
+    p_msg "run let"
     StringAnalyzer.new
-  end
+    end
 
   after(:example) do
     puts "Hook After "

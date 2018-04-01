@@ -19,7 +19,7 @@ describe StringAnalyzer do
       pending("For Debugging purpose")
       sa = StringAnalyzer.new
       #Execute
-      test_string = 'uuu'
+      test_string = 'll'
       #Excpectaion
       expect(sa.has_vowels? test_string).to be true
     end

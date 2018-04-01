@@ -1,5 +1,8 @@
 class StringAnalyzer
-  def has_vowels?(str)
-    !!(str =~ /[aeiou]+/i)
+
+  attr_accessor :word
+
+  def has_vowels?(word)
+    !!(word =~ /[aeiou]+/i)
   end
 end

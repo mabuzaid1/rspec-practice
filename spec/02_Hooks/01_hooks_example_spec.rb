@@ -1,4 +1,4 @@
-require 'spec_helpere'
+require 'spec_helper'
 
 describe "Before and after hooks" do
   before(:each) do
