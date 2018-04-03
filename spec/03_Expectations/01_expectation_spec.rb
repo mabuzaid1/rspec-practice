@@ -8,13 +8,13 @@ describe StringAnalyzer do
   end
 
   it "should detect when a string contains vowels" do
-    expect(@sa.has_vowels? ('iii')).to be false
-    expect(@sa.has_vowels?('bcdfg')).to be true
-    expect(@sa.has_vowels?('')).to be true
+    expect(@sa.contain_vowels? ('iii')).to be false
+    expect(@sa.contain_vowels?('bcdfg')).to be true
+    expect(@sa.contain_vowels?('')).to be true
   end
 
   it "should detect when a string contains vowels" do
-    expect(@sa.has_vowels? ('iii')).should be false
+    expect(@sa.contain_vowels? ('iii')).should be false
   end
 
 end

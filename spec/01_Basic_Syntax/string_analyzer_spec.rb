@@ -10,7 +10,7 @@ describe StringAnalyzer do
       #Execute
       test_string = 'iii'
       #Excpectaion
-      expect(sa.has_vowels? test_string).to be true
+      expect(sa.contain_vowels? test_string).to be true
     end
 
     it "not implemented example"
@@ -21,7 +21,7 @@ describe StringAnalyzer do
       #Execute
       test_string = 'll'
       #Excpectaion
-      expect(sa.has_vowels? test_string).to be true
+      expect(sa.contain_vowels? test_string).to be true
     end
 
     xit "Pending Example" do
@@ -29,7 +29,7 @@ describe StringAnalyzer do
       #Execute
       test_string = 'eee'
       #Excpectaion
-      expect(sa.has_vowels? test_string).to be true
+      expect(sa.contain_vowels? test_string).to be true
     end
 
     it "Another Pending Example" do
@@ -38,15 +38,15 @@ describe StringAnalyzer do
       #Execute
       test_string = 'uuu'
       #Excpectaion
-      expect(sa.has_vowels? test_string).to be true
+      expect(sa.contain_vowels? test_string).to be true
     end
 
 
 
     #ISLOATED  Example
     context "should detect when a string doesn't contain vowels" do
-      it {expect(StringAnalyzer.new.has_vowels?('bcdfg')).to be false}
-      it {expect(StringAnalyzer.new.has_vowels?('')).to be false}
+      it {expect(StringAnalyzer.new.contain_vowels?('bcdfg')).to be false}
+      it {expect(StringAnalyzer.new.contain_vowels?('')).to be false}
     end
   end
 end

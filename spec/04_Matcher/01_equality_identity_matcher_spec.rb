@@ -7,19 +7,19 @@ describe StringAnalyzer do
   end
 
   it "Equality/Identity Matchers eq" do
-    expect(@sa.has_vowels? 'cbg').to eq false
+    expect(@sa.contain_vowels? 'cbg').to eq false
   end
 
   it "Equality/Identity Matchers eql" do
-    expect(@sa.has_vowels? 'cbg').to eql false
+    expect(@sa.contain_vowels? 'cbg').to eql false
   end
 
   it "Equality/Identity Matchers be" do
-    expect(@sa.has_vowels? 'cbg').to be false
+    expect(@sa.contain_vowels? 'cbg').to be false
   end
 
   it "Equality/Identity Matchers equal" do
-    expect(@sa.has_vowels? 'cbg').to equal false
+    expect(@sa.contain_vowels? 'cbg').to equal false
   end
 
 end

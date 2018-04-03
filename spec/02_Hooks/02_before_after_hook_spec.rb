@@ -13,16 +13,16 @@ describe StringAnalyzer do
   context "With valid input" do
     puts "First Example running"
     it "should detect when a string contains vowels" do
-      expect(@sa.has_vowels? ('iii')).to be true
+      expect(@sa.contain_vowels? ('iii')).to be true
     end
 
     #ISOLATED  Example
     context "should detect when a string doesn't contain vowels" do
       puts "Second Example running"
-      it {expect(@sa.has_vowels?('bcdfg')).to be false}
+      it {expect(@sa.contain_vowels?('bcdfg')).to be false}
 
       puts "Third Example running"
-      it {expect(@sa.has_vowels?('')).to be false}
+      it {expect(@sa.contain_vowels?('')).to be false}
     end
   end
 end

@@ -7,10 +7,18 @@ describe StringAnalyzer do
   @sa = StringAnalyzer.new
 end
 
-  xit "Error Matchers", :aggregate_failuresdo do
+  it "Error Matchers", :aggregate_failuresdo do
+      expect { 1/0 }.to raise_error
       expect { 1/0 }.to raise_error(ZeroDivisionError)
       expect { 1/0 }.to raise_error("divided by 0")
       expect { 1/0 }.to raise_error("divided by 0", ZeroDivisionError)
+  end
+
+  it "Exception Matcher" do
+    expect { 1/0 }.to raise_exception
+    expect { 1/0 }.to raise_exception(ZeroDivisionError)
+    expect { 1/0 }.to raise_exception("divided by 0")
+    expect { 1/0 }.to raise_exception("divided by 0", ZeroDivisionError)
   end
 
   it "Error Matchers", :aggregate_failures do
